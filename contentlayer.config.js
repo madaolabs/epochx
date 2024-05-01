@@ -40,6 +40,10 @@ export const Post = defineDocumentType(() => ({
     description: {
       type: "string",
     },
+    link: {
+      type: "string",
+      required: true
+    },
     date: {
       type: "date",
       required: true,
