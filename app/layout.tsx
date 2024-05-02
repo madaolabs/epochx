@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
 import { ModeToggle } from "@/components/mode-toggle";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +27,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="max-w-2xl mx-auto py-10 px-4">
             <header>
               <div className="flex items-center justify-between">
-                <nav className="mr-auto font-medium space-x-6">
+                <nav className="flex-1 flex items-center font-medium space-x-6">
                   <Link href="/" className="text-lg font-semibold">
-                    Dewall
+                    <Image
+                      src="/dewall-favicon-color.svg"
+                      alt=""
+                      width={40}
+                      height={20}
+                    />
                   </Link>
                   <Link className="text-sm" href="/">
                     Home
