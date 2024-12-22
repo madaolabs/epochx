@@ -9,8 +9,8 @@ import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dewall",
-  description: "Dewall is a development team focused on web3",
+  title: "EpochX",
+  description: "EpochX is a development team focused on web3",
 };
 
 interface RootLayoutProps {
@@ -29,12 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex items-center justify-between">
                 <nav className="flex-1 flex items-center font-medium space-x-6">
                   <Link href="/" className="text-lg font-semibold">
-                    <Image
-                      src="/dewall-favicon-color.svg"
-                      alt=""
-                      width={40}
-                      height={20}
-                    />
+                    <Image src="/logo.svg" alt="" width={30} height={15} />
                   </Link>
                   <Link className="text-sm" href="/">
                     Home

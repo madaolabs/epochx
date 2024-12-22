@@ -1,5 +1,5 @@
-# Dewall Official Website
+# EpochX Official Website
 
-https://www.dewall.xyz
+https://www.epochx.network
 
 
